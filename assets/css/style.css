@@ -173,6 +173,7 @@ button:hover {
 
 .footer .right a {
     margin-left: 10px; /* Logo öğeleri arasında boşluk */
+   
 }
 
 .footer .right a img {
@@ -180,6 +181,10 @@ button:hover {
     height: auto; /* Logo öğe yüksekliği otomatik */
 }
 
+.right{
+    display: flex;
+    gap: 30px;
+}
 
 /* keyframe kullanarak sağdan sola animasyonu */
 .fade-in {
