@@ -153,12 +153,18 @@ button:hover {
 }
 
 .footer {
-    background-color: #333; /* Footer arka plan rengi */
-    color: white; /* Metin rengi */
-    padding: 20px; /* Padding değerleri */
+    background-color: #333;
+    color: white; 
+    padding: 20px; 
     display: flex;
-    justify-content: space-between; /* Sol ve sağ kenarlar arasında boşluk */
-    align-items: center; /* Öğeleri dikey olarak hizalar */
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    
+    
 }
 
 .footer .left p {
