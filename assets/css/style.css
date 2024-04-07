@@ -11,9 +11,28 @@ body {
 }
 
 .header {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: rgb(26, 25, 25);
     justify-content: space-between;
+    display: flex;
+    padding-inline: 50px;
+}
+
+.header-right{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header .header-right a {
+    text-decoration: none;
+    margin-right: 20px; 
+    font-size: 18px; 
+    transition: color 0.3s;
+    color:white;
+}
+
+.header .header-right a:hover {
+    color: #ffd700;
 }
 
 .about-me {
