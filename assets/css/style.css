@@ -10,9 +10,6 @@ body {
     padding: 0;
 }
 
-.container{
-    background-color: blanchedalmond;
-}
 .header {
     background-color: #f0f0f0;
     padding: 20px;
@@ -35,6 +32,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+    
 }
 
 .project-card {
@@ -97,6 +95,18 @@ h2 {
 form {
     display: grid;
     gap: 20px;
+
+    a{
+        text-decoration: none;
+        text-align: center;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
 }
 
 .form-group {
@@ -117,20 +127,33 @@ textarea {
     box-sizing: border-box;
 }
 
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
+ 
 
 button:hover {
     background-color: #0056b3;
 }
 
+.footer {
+    background-color: #333; /* Footer arka plan rengi */
+    color: white; /* Metin rengi */
+    padding: 20px; /* Padding değerleri */
+    display: flex;
+    justify-content: space-between; /* Sol ve sağ kenarlar arasında boşluk */
+    align-items: center; /* Öğeleri dikey olarak hizalar */
+}
+
+.footer .left p {
+    margin: 0; /* Paragrafın kenar boşluğunu sıfırla */
+}
+
+.footer .right a {
+    margin-left: 10px; /* Logo öğeleri arasında boşluk */
+}
+
+.footer .right a img {
+    width: 30px; /* Logo öğe genişliği */
+    height: auto; /* Logo öğe yüksekliği otomatik */
+}
 
 
 /* keyframe kullanarak sağdan sola animasyonu */
@@ -164,3 +187,5 @@ button:hover {
         color: blue;
     }
 }
+
+
