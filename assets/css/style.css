@@ -184,6 +184,11 @@ button:hover {
 .right{
     display: flex;
     gap: 30px;
+
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
 /* keyframe kullanarak sağdan sola animasyonu */
