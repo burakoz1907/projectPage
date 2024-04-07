@@ -1,0 +1,24 @@
+{
+    "projectCards": [
+      {
+        "title": "TYPEMASTER KEYBOARD",
+        "image": "assets/img/keyboard.png",
+        "description": "Responsive olarak bitirdiğim bir tasarım",
+        "link": "https://velvety-brigadeiros-724b7d.netlify.app/"
+      },
+      {
+        "title": "Test Page",
+        "image": "assets/img/testpage.png",
+        "description": "Css öğrenmeye başladığımda ilk tasarladığım ufak bir kesit ancak responsive değildir.",
+        "link": "https://cool-frangollo-1b4752.netlify.app"
+      },
+      {
+        "title": "Crowfund Page",
+        "image": "assets/img/crowfund.png",
+        "description": "Css temelim ile yaptığım şuanlık tamamlanmamış ve birçok hatası bulunan responsive olmayan bir tasarım.",
+        "link": "https://polite-marigold-a3137e.netlify.app"
+      }
+      
+    ]
+  }
+  
