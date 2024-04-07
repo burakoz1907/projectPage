@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #333;
 }
 
 .header {
@@ -47,18 +48,18 @@ body {
 }
 
 .project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     margin-top: 20px;
-    
+    margin-inline: 20px;
 }
 
 .project-card {
-    background-color: #f9f9f9;
+    margin-right: 10px;
+    background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    max-width: 800px;
     padding: 20px;
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
@@ -66,7 +67,7 @@ body {
 
 .project-card img {
     border-radius: 10px;
-    margin: 50px 50px;
+    margin: 0 auto;
 }
 
 .project-card h2 {
@@ -79,6 +80,7 @@ body {
 
 .project-card p {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .project-card a {
@@ -101,39 +103,28 @@ body {
 }
 
 .form {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 100%;
+    background-color: #f9f9f9;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
-h2 {
+.form h2 {
     text-align: center;
     margin-bottom: 20px;
-}
-
-form {
-    display: grid;
-    gap: 20px;
-
-    a{
-        text-decoration: none;
-        text-align: center;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in-out;
-    }
+    color: #333; 
 }
 
 .form-group {
-    display: grid;
+    margin-bottom: 20px;
 }
 
 label {
-    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
 }
 
 input[type="text"],
@@ -146,23 +137,39 @@ textarea {
     box-sizing: border-box;
 }
 
- 
-
-button:hover {
-    background-color: #0056b3;
+textarea {
+    resize: vertical;
 }
 
+a[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+
 .footer {
-    background-color: #333;
+    margin-top: 100px;
+    background-color: rgb(26, 25, 25);
     color: white; 
     padding: 20px; 
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    position: fixed; 
     bottom: 0; 
     width: 100%; 
-    z-index: 1000; 
+
     
     
 }
@@ -187,7 +194,6 @@ button:hover {
 
     a{
         text-decoration: none;
-        cursor: pointer;
     }
 }
 
@@ -223,4 +229,11 @@ button:hover {
     }
 }
 
+
+@media (width<=768px){
+    .project-cards{
+        grid-template-columns: repeat(1,1fr);
+        margin-inline: 0px;
+    }
+}
 
